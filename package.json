@@ -1,0 +1,60 @@
+{
+  "name": "dsh-thinking-guard",
+  "version": "0.2.2",
+  "type": "module",
+  "license": "MIT",
+  "description": "DeepSeek Harness plugin: route stray reasoning back into the thinking channel (seam repair, wrap, DSML tool-call restore, duplicate reply dedupe, opener rewrite) — every rule has its own switch",
+  "keywords": [
+    "dsh-bundle",
+    "dsh-plugin",
+    "deepseek-harness",
+    "thinking",
+    "reasoning",
+    "composer"
+  ],
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "wrap.js",
+    "seam.js",
+    "dedupe.js",
+    "dsml.js",
+    "dsml-split.js",
+    "letme.js",
+    "cordis.patch.yml",
+    "README.md",
+    "INSTALL.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/dsml.test.mjs test/dsml-split.test.mjs test/seam.test.mjs test/wrap.test.mjs test/dedupe.test.mjs test/letme.test.mjs test/test.mjs test/provider-replay.test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/<your-account>/dsh-thinking-guard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/<your-account>/dsh-thinking-guard/issues"
+  },
+  "homepage": "https://github.com/<your-account>/dsh-thinking-guard#readme",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  }
+}

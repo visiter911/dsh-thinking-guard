@@ -1,0 +1,11 @@
+# Thinking Guard — bundle patch
+#
+# 由 profile 的 dsh.profile.bundles 引入，insert 一个 host 插件。
+# 本插件目前只提供会话级规则面板的配置存储，不注册任何 llm/agent hook。
+#
+# 临时停用（不卸载）：在 profile 的 cordis.patch.yml 里加
+#   - id: thinking-guard
+#     disabled: true
+- insert:
+    - id: thinking-guard
+      name: dsh-thinking-guard

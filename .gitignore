@@ -1,0 +1,16 @@
+# 依赖与构建产物
+node_modules/
+pnpm-lock.yaml
+dist/
+*.tgz
+
+# 编辑器 / 系统
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# 本地状态与日志
+*.log
+.thinking-guard.json
+thinking-guard.json
