@@ -1,6 +1,6 @@
 # dsh-thinking-guard
 
-[![CI](https://github.com/<your-account>/dsh-thinking-guard/actions/workflows/ci.yml/badge.svg)](https://github.com/<your-account>/dsh-thinking-guard/actions/workflows/ci.yml)
+[![CI](https://github.com/visiter911/dsh-thinking-guard/actions/workflows/ci.yml/badge.svg)](https://github.com/visiter911/dsh-thinking-guard/actions/workflows/ci.yml)
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![node](https://img.shields.io/badge/node-%3E%3D22-brightgreen)](package.json)
 
@@ -19,7 +19,7 @@ DeepSeek Harness 插件：把跑偏的**思考块**收回思考通道。
 
 ```bash
 # 1. 放进插件目录
-git clone https://github.com/<your-account>/dsh-thinking-guard.git \
+git clone https://github.com/visiter911/dsh-thinking-guard.git \
   ~/.dsh/plugins-src/dsh-thinking-guard
 
 # 2. profile 里登记（详见 INSTALL.md）
@@ -260,6 +260,7 @@ export const RULE_DEFS = [
 2. `dsh.profile.bundles` 加 `"dsh-thinking-guard"`
 3. 在 profile 目录跑 `pnpm install`
 4. 重启 DSH
+
 
 
 

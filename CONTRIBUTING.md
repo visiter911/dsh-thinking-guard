@@ -3,7 +3,7 @@
 ## 开发
 
 ```bash
-git clone https://github.com/<your-account>/dsh-thinking-guard.git
+git clone https://github.com/visiter911/dsh-thinking-guard.git
 cd dsh-thinking-guard
 npm test          # 118 条用例，不需要网络
 ```
@@ -37,3 +37,4 @@ npm test          # 118 条用例，不需要网络
 - 提交信息用祈使句，首行不超过 72 字符
 - PR 请附带 `npm test` 结果
 - 行为变化请更新 `CHANGELOG.md`
+

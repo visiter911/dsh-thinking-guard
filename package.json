@@ -40,12 +40,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/<your-account>/dsh-thinking-guard.git"
+    "url": "git+https://github.com/visiter911/dsh-thinking-guard.git"
   },
   "bugs": {
-    "url": "https://github.com/<your-account>/dsh-thinking-guard/issues"
+    "url": "https://github.com/visiter911/dsh-thinking-guard/issues"
   },
-  "homepage": "https://github.com/<your-account>/dsh-thinking-guard#readme",
+  "homepage": "https://github.com/visiter911/dsh-thinking-guard#readme",
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
@@ -58,3 +58,4 @@
     }
   }
 }
+
