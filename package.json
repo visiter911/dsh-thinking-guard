@@ -3,10 +3,12 @@
   "version": "0.2.2",
   "type": "module",
   "license": "MIT",
+  "author": "visiter911",
   "description": "DeepSeek Harness plugin: route stray reasoning back into the thinking channel (seam repair, wrap, DSML tool-call restore, duplicate reply dedupe, opener rewrite) — every rule has its own switch",
   "keywords": [
     "dsh-bundle",
     "dsh-plugin",
+    "dsh",
     "deepseek-harness",
     "thinking",
     "reasoning",
@@ -14,9 +16,14 @@
   ],
   "main": "index.js",
   "exports": {
-    ".": "./index.js",
-    "./client": "./client.js",
-    "./package.json": "./package.json"
+    ".": {
+      "default": "./index.js"
+    },
+    "./client": {
+      "default": "./client.js"
+    },
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
   },
   "files": [
     "index.js",
@@ -30,13 +37,18 @@
     "cordis.patch.yml",
     "README.md",
     "INSTALL.md",
-    "LICENSE"
+    "LICENSE",
+    "CHANGELOG.md"
   ],
   "scripts": {
     "test": "node --test test/dsml.test.mjs test/dsml-split.test.mjs test/seam.test.mjs test/wrap.test.mjs test/dedupe.test.mjs test/letme.test.mjs test/test.mjs test/provider-replay.test.mjs"
   },
   "engines": {
     "node": ">=22"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   },
   "repository": {
     "type": "git",
@@ -53,9 +65,9 @@
     "client": {
       "platform": "web",
       "inject": [
+        "@deepseek-ai/dsh-client-runtime",
         "@deepseek-ai/dsh-client-ui-slots"
       ]
     }
   }
 }
-
